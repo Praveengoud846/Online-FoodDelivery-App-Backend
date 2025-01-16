@@ -21,6 +21,7 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+//JWT authentication
 public class JwtTokenValidator extends OncePerRequestFilter{
 
 	@Override
@@ -47,6 +48,7 @@ public class JwtTokenValidator extends OncePerRequestFilter{
 			}
 		}
 		filterChain.doFilter(request, response);
+		System.out.println("hello");
 	}
 
 }
